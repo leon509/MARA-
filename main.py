@@ -12,8 +12,8 @@ bot = commands.Bot(
 )
 
 @bot.event
-async def on_ready():
-    print(f"{bot.user} connecté")
+async def on_command(ctx):
+    print(f"COMMANDE : {ctx.command} | {ctx.author}")
 
 async def load_cogs():
     for file in os.listdir("./cogs"):
