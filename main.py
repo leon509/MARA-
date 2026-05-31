@@ -18,6 +18,7 @@ async def on_ready():
 async def load_cogs():
     for file in os.listdir("./cogs"):
         if file.endswith(".py"):
+            print(f"Chargement : {file}")
             await bot.load_extension(f"cogs.{file[:-3]}")
 
 async def main():
