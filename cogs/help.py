@@ -5,8 +5,10 @@ class Help(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="help")
-    async def help_command(self, ctx):
+   @commands.command(name="help")
+async def help_command(self, ctx):
+    print("HELP APPELE")
+    await ctx.send("test")
 
         embed = discord.Embed(
             title="📜 Commandes du Bot",
