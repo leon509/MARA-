@@ -30,4 +30,4 @@ class Utility(commands.Cog):
             await ctx.send("❌ Impossible d'envoyer le message")
 
 async def setup(bot):
-    await bot.add_cog(Utility(bot))
+    await bot.add_cog(Utility(bot)) 
